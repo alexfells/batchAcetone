@@ -16,3 +16,19 @@ DefineComponents | name : molecular weight (kg/mole)
     heavy : 0.0180
     light : 0.09214 
     solute : 0.05808
+
+|||---------------------|||
+|||     Compartments    |||
+|||---------------------|||
+
+Compartment heavy_comp of continuous phase heavy_phase  
+    volume : 50*10**-6
+    IncompressiblePhase heavy_phase to heavy_comp 
+        heavy : 2.77
+        density : 999
+
+Compartment light_comp of continuous phase light_phase  
+    volume : 50*10**-6
+    IncompressiblePhase light_phase to light_comp 
+        heavy : 0.470
+        density : 867 
