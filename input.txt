@@ -25,7 +25,7 @@ Compartment heavy_comp of continuous phase heavy_phase
     volume : 50*10**-6
     IncompressiblePhase heavy_phase to heavy_comp 
         heavy : 2.77
-        solute : 0
+        solute : 0.0175
         density : 999
 
 Compartment light_comp of continuous phase light_phase  
