@@ -1,0 +1,18 @@
+|||----------------------|||
+|||     Cofiguration     |||
+|||----------------------|||
+
+Solver Tsit5() |Rosenbrock23	| For julia see https://diffeq.sciml.ai/stable/solvers/ode_solve/ and https://github.com/SciML/diffeqpy
+    t_start : 0
+    t_final : 60
+    atol : 10**-6
+    rtol : 10**-6
+    max step size : 1
+
+Defaults 
+    flow_tau : 10**6
+
+DefineComponents | name : molecular weight (kg/mole)
+    heavy : 0.0180
+    light : 0.09214 
+    solute : 0.05808
