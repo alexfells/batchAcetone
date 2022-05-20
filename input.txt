@@ -10,6 +10,7 @@ Solver Tsit5() |Rosenbrock23	| For julia see https://diffeq.sciml.ai/stable/solv
     max step size : 1
 
 Defaults 
+    model name : 6wt%
     flow_tau : 10**6
 
 DefineComponents | name : molecular weight (kg/mole)
@@ -25,13 +26,17 @@ Compartment heavy_comp of continuous phase heavy_phase
     volume : 50*10**-6
     IncompressiblePhase heavy_phase to heavy_comp 
         heavy : 2.77
-        solute : 0.0175
+        |solute : 0.0175	|  2 wt%
+        |solute : 0.0358	|  4 wt%
+        solute : 0.0548	|  6 wt%
+        |solute : 0.0746	|  8 wt%
+        |solute : 0.0954	| 10 wt%
         density : 999
 
 Compartment light_comp of continuous phase light_phase  
     volume : 50*10**-6
     IncompressiblePhase light_phase to light_comp 
-        heavy : 0.470
+        light : 0.470
         solute : 0
         density : 867 
 
