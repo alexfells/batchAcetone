@@ -8,6 +8,7 @@ Solver Tsit5() |Rosenbrock23	| For julia see https://diffeq.sciml.ai/stable/solv
     atol : 10**-6
     rtol : 10**-6
     max step size : 1
+    write interval : 1
 
 Defaults 
     model name : 6wt%
@@ -48,6 +49,7 @@ MassTransfer heavy_to_light_MT of species solute from heavy_comp to light_comp
     ks : 1*10**-5
     kt : 1*10**-5
     area : 1
-    S : 1 / 0.843
+    |S : 1 / 0.843
+    S : @S_func_conc(self, 'heavy_comp', 'heavy_phase', 'solute', '1 / 0.843')
 
 end
